@@ -4,12 +4,10 @@ class ImportController < ApplicationController
 
   def import
     file_ref = params['upload']['data_file']
-    i = 1
     @total_revenue = 0.0
-
     if file_ref.respond_to?(:read)
       data_array = file_ref.read.split(/\n/)
-      data_array.shift
+      data_array.shift #Remove header line
       data_array.each do |line|
         begin
           data_hash = process_line(line)
