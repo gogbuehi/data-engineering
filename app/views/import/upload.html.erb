@@ -1,0 +1,7 @@
+<h1>Import Purchase Data</h1>
+<%= form_tag("/import", method: "post", multipart: true) do %>
+  <%= file_field 'upload', 'data_file' %>
+  <%= submit_tag("Upload") %>
+<% end %>
+
+
