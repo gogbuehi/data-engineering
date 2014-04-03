@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one_item:
+  id: 1
+  purchaser_name: Purchaser A
+  item_description: Item A
+  item_price: 1.5
+  purchase_count: 1
+  merchant_address: Address A
+  merchant_name: Merchant A
+
+two_items:
+  id: 2
+  purchaser_name: Purchaser B
+  item_description: Item B
+  item_price: 1.5
+  purchase_count: 2
+  merchant_address: Address B
+  merchant_name: Merchant B
