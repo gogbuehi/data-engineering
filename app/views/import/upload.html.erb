@@ -2,10 +2,6 @@
 <div>
   <%= render :partial => "shared_components/user_auth" %>
 </div>
-<div>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-</div>
 <% if user_signed_in? %>
   <%= form_tag("/import", method: "post", multipart: true) do %>
     <%= file_field 'upload', 'data_file' %>

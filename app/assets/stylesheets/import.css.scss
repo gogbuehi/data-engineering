@@ -1,3 +1,19 @@
 // Place all the styles related to the Import controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+p.notice {
+  color:darkgreen;
+  background-color:lightgreen;
+  border:solid 2px darkgreen;
+}
+p.alert {
+  color:darkred;
+  background-color:lightpink;
+  border:solid 2px darkred;
+}
+
+p.notice, p.alert {
+  text-align: center;
+  padding:5px;
+}
+
