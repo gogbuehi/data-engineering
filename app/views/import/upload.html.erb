@@ -1,7 +1,10 @@
 <h1>Import Purchase Data</h1>
-<%= form_tag("/import", method: "post", multipart: true) do %>
-  <%= file_field 'upload', 'data_file' %>
-  <%= submit_tag("Upload") %>
+<div>
+  <%= render :partial => "shared_components/user_auth" %>
+</div>
+<% if user_signed_in? %>
+  <%= form_tag("/import", method: "post", multipart: true) do %>
+    <%= file_field 'upload', 'data_file' %>
+    <%= submit_tag("Upload") %>
+  <% end %>
 <% end %>
-
-

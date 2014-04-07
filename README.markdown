@@ -24,8 +24,19 @@ Imagine that LivingSocial has just acquired a new company.  Unfortunately, the c
 Here's what your web-based application must do:
 
 1. Your app must accept (via a form) a tab delimited file with the following columns: purchaser name, item description, item price, purchase count, merchant address, and merchant name.  You can assume the columns will always be in that order, that there will always be data in each column, and that there will always be a header line.  An example input file named example_input.tab is included in this repo.
+ - DONE: Includes simple test to confirm that good data works
+ - Additional thoughts:
+  - Could use bad data tests, error messaging, success messaging, among other usability features
 1. Your app must parse the given file, normalize the data, and store the information in a relational database.
+ - DONE: Parses the provided file, converts the data into appropriate data types, then stores it in a simple table
+ - Additional thoughts:
+  - Does not have very robust data integrity checks (i.e. text in the number columns converts to '0' without warning)
+  - Does not check for repeated data (may not be possible)
+  - Database uses only one table, which fulfills the needs of this exercise, but isn't very useful for more elaborate uses of this data. For example, the Merchant name and address could go into a separate table, in order to allow querying purchases by merchant more efficiently.
 1. After upload, your application should display the total amount gross revenue represented by the uploaded file.
+ - DONE: The Purchase model provides the total purchase amount (assuming that is what is meant through the "item price" and "purchase count" fields), which is totaled as the data is processed
+ - Additional thoughts:
+  - I might consider storing this information, as it is lost after this process is completed.
 
 Your application does not need to:
 
