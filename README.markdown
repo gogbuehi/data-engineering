@@ -50,5 +50,8 @@ Your application should be easy to set up and should run on either Linux or Mac 
 Evaluation of your submission will be based on the following criteria. Additionally, reviewers will attempt to assess your familiarity with standard libraries. If your code submission is in Ruby, reviewers will attempt to assess your experience with object-oriented programming based on how you've structured your submission.
 
 1. Did your application fulfill the basic requirements?
+ - DONE
 1. Did you document the method for setting up and running your application?
+ - DONE: https://docs.google.com/document/d/1qdJdk-JPNlQO82CZ7OjcQ90TLhaekjNnT0o_YruuRjw/pub
 1. Did you follow the instructions for submission?
+ - DONE: Pull request and email to follow this commit.
